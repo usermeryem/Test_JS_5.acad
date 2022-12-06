@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ex3</title>
+</head>
+<body>
+<!--Cet exercice prend strictement deux chaines avec un espace entre eux. La sortie doit être composée
+de deux lettres majuscules avec un point séparateur.
+Exemple
+Ch : Sam Harris, la sortie doit être : S.H
+Ch : Patrick Feeney, la sortie doit être : P.F-->  
+<script>
+  let Chi=prompt('donner une chaîne de caractères');
+  function affichage(Ch){
+    let i=Ch.indexOf(' ');
+    let Chr=Ch[0]+'.'+Ch[i+1];
+    return (Chr);
+  }
+  console.log(affichage(Chi));
+</script>
+</body>
+</html>

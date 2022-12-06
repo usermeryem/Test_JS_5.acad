@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ex2</title>
+</head>
+<body>
+  <script>
+    function remplirTab(){
+    let n=Number(prompt('donner une longueur de tableau'));
+    let  T=[];
+    for (let i=0; i<n; i++){
+     T[i]=Number(prompt('donner un élément du tableau'));
+    };
+    return (T)
+    }       
+    function sum(T){
+      let S=0;
+      for (let i=0; i<T.length; i++){
+        if (T[i]>=0){S=S+T[i];}else{S=S;}      
+      }
+      return (S);
+    }
+    let T1=remplirTab();    
+    console.log('La somme des éléments positifs du tableau', T1, 'est:', sum(T1));    
+  </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ex1</title>
+</head>
+<body>
+  <script>
+    function remplirTab(){
+    let n=Number(prompt('donner une longueur de tableau'));
+    let  T=[];
+    for (let i=0; i<n; i++){
+     do{T[i]=Number(prompt('donner un élément du tableau'));} while (T[i]<0)
+    };
+    return (T)
+    }
+    let T1=remplirTab();    
+    T1=T1.sort();
+    console.log('La somme des 2 valeurs minimales du tableau', T1, 'est:', T1[0]+T1[1]);    
+  </script>
+</body>
+</html>
